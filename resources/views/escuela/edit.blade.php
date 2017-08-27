@@ -7,7 +7,7 @@
     <div class="col-xs-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <p>Crear una nueva escuela.</p>
+                <p>Editar escuela: <bold>{{$escuela->nombre_escuela}}</bold>.</p>
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
@@ -20,16 +20,16 @@
                         </ul>
                     </div>
                 @endif
-                {!!Form::open(array('url'=>'/escuela','method'=>'POST','autocomplete'=>'off'))!!}
+                {!!Form::model($escuela,['method'=>'PATCH','route'=>['escuela.update',$escuela->id_escuela]])!!}
                 {{Form::token()}}
                     <div class="form-group">
                         <label for="">Nombre de la escuela</label>
-                        <input type="text" name="nombre_escuela" id="" class="form-control" placeholder="Colegio de antorcha" aria-describedby="helpId">
+                        <input type="text" name="nombre_escuela" id="" class="form-control" value="{{$escuela->nombre_escuela}}" placeholder="Colegio de antorcha" aria-describedby="helpId">
                         <small id="helpId" class="text-muted">Puede ser letras y numeros.</small>
                     </div>
                     <div class="form-group">
                         <label for="">Direcion de la escuela</label>
-                        <input type="text" name="direcion_escuela" id="" class="form-control" placeholder="calle/avenida/colonia/numero" aria-describedby="helpId">
+                        <input type="text" name="direcion_escuela" id="" class="form-control" value="{{$escuela->direcion_escuela}}" placeholder="calle/avenida/colonia/numero" aria-describedby="helpId">
                         <small id="helpId" class="text-muted">Puede ser letras y numeros.</small>
                     </div>
                     <div class="form-group">

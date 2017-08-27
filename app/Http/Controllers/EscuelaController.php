@@ -28,8 +28,7 @@ class EscuelaController extends Controller
             $query = trim($request->get('textoBusqueda'));
             $escuelas = DB::table('escuelas')->where('nombre_escuela','LIKE','%'.$query.'%')
             ->orderBy('id_escuela','desc')
-            ->paginate(10);
-
+            ->paginate(5);
             return view('escuela.index', ["escuelas"=>$escuelas,"textoBusqueda"=>$query]);
         }
     }
@@ -59,14 +58,14 @@ class EscuelaController extends Controller
         return view('escuela.edit', ['escuela'=>Escuela::findOrFail($id_escuela)]);
     }
 
-    public function update(EscuelaReques $reques,$id_escuela)
+    public function update(EscuelaRequest $request, $id_escuela)
     {
         $escuela = Escuela::findOrFail($id_escuela);
         $escuela->nombre_escuela = $request->get('nombre_escuela');
         $escuela->direcion_escuela = $request->get('direcion_escuela');
         $escuela->tipo_escuela = $request->get('tipo_escuela');
         $escuela->update();
-        return Redirect::to('/esceula');
+        return Redirect::to('/escuela');
     }
 
     //Pendiente para la interpretacion de su funcinamiento.
