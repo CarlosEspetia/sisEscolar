@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <h3>create</h3>
 
 =======
@@ -66,4 +67,7 @@
 >>>>>>> 7b0b23ce548e0cdaab13ee5a58833e8cc48ecb49
 =======
 >>>>>>> 7b0b23ce548e0cdaab13ee5a58833e8cc48ecb49
+=======
+    <h3>create</h3>
+>>>>>>> parent of e310e4c... tarifas
 @endsection
