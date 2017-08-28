@@ -35,11 +35,9 @@
                     <div class="form-group">
                         <label for="">Tipo de escuela</label>
                         <select class="form-control" name="tipo_escuela">
-                            <option value="1">Guarderia</option>
-                            <option value="2">Kinder</option>
-                            <option value="3">Primaria</option>
-                            <option value="4">Secundaria</option>
-                            <option value="5">Maternal</option>
+                            @foreach($tipos as $data)
+                                 <option value="{{$data->id_tipo_escuela}}">{{$data->descripcion_tipo_escuela}}</option>
+                            @endforeach
                         </select>
                     </div>
                     <button type="submit" class="btn btn-primary">Guardar</button>

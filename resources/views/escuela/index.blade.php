@@ -39,7 +39,7 @@
                             <tr class="odd gradeX">
                                 <td>{{$data->id_escuela}}</td>
                                 <td>{{$data->nombre_escuela}}</td>
-                                <td>{{$data->tipo_escuela}}</td>
+                                <td>{{$data->descripcion_tipo_escuela}}</td>
                                 <td>{{$data->direcion_escuela}}</td>
                                 <td>
                                     <a href="{{URL::action('EscuelaController@edit',$data->id_escuela)}}">
