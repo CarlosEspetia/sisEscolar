@@ -13,6 +13,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 5d09edd... tarifas
     <title>BiteManager 1.0</title>
 =======
     <title>sisEscolar</title>
@@ -20,12 +23,15 @@
 =======
     <title>sisEscolar</title>
 >>>>>>> 7b0b23ce548e0cdaab13ee5a58833e8cc48ecb49
+<<<<<<< HEAD
 =======
     <title>sisEscolar</title>
 >>>>>>> 7b0b23ce548e0cdaab13ee5a58833e8cc48ecb49
 =======
     <title>SB Admin 2 - Bootstrap Admin Theme</title>
 >>>>>>> parent of e310e4c... tarifas
+=======
+>>>>>>> parent of 5d09edd... tarifas
 
     <!-- Bootstrap Core CSS -->
     <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -61,6 +67,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 5d09edd... tarifas
                 <a class="navbar-brand" href="index.html">BiteManager 1.0</a>
 =======
                 <a class="navbar-brand" href="index.html">sisEscolar</a>
@@ -68,12 +77,15 @@
 =======
                 <a class="navbar-brand" href="index.html">sisEscolar</a>
 >>>>>>> 7b0b23ce548e0cdaab13ee5a58833e8cc48ecb49
+<<<<<<< HEAD
 =======
                 <a class="navbar-brand" href="index.html">sisEscolar</a>
 >>>>>>> 7b0b23ce548e0cdaab13ee5a58833e8cc48ecb49
 =======
                 <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
 >>>>>>> parent of e310e4c... tarifas
+=======
+>>>>>>> parent of 5d09edd... tarifas
             </div>
             <!-- /.navbar-header -->
 

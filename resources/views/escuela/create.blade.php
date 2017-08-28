@@ -4,11 +4,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 5d09edd... tarifas
     <h3>create</h3>
 
 =======
-=======
->>>>>>> 7b0b23ce548e0cdaab13ee5a58833e8cc48ecb49
 =======
 >>>>>>> 7b0b23ce548e0cdaab13ee5a58833e8cc48ecb49
     <div class="col-lg-12">
@@ -61,9 +62,6 @@
             <!-- /.panel-body -->
         </div>
 <<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7b0b23ce548e0cdaab13ee5a58833e8cc48ecb49
-=======
 >>>>>>> 7b0b23ce548e0cdaab13ee5a58833e8cc48ecb49
 =======
 >>>>>>> 7b0b23ce548e0cdaab13ee5a58833e8cc48ecb49
