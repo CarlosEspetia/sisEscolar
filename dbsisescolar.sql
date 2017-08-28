@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-08-2017 a las 05:02:30
+-- Tiempo de generación: 29-08-2017 a las 01:00:17
 -- Versión del servidor: 10.1.22-MariaDB
 -- Versión de PHP: 7.1.4
 
@@ -72,6 +72,23 @@ CREATE TABLE `escuelas` (
   `direcion_escuela` varchar(100) COLLATE utf8_spanish_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
+--
+-- Volcado de datos para la tabla `escuelas`
+--
+
+INSERT INTO `escuelas` (`id_escuela`, `tipo_escuela`, `nombre_escuela`, `direcion_escuela`) VALUES
+(1, 1, 'El nene feliz', 'Villas del sol'),
+(2, 1, 'Sonrrisas', 'Ejido'),
+(3, 1, 'Casita', 'Ejido'),
+(4, 1, 'Animalia', 'Ejido'),
+(5, 2, 'Colores', 'Ejido'),
+(6, 2, 'CrayolaI', 'Ejido'),
+(7, 1, 'Arcoiris', 'Ejido'),
+(8, 2, 'Jugete', 'Ejido'),
+(9, 1, 'Payasito', 'Ejido'),
+(10, 1, 'colegio Beby', 'Villas del sol'),
+(11, 1, 'pepepala', 'marchsldwjnfojew');
+
 -- --------------------------------------------------------
 
 --
@@ -134,6 +151,14 @@ CREATE TABLE `tipo_escuela` (
   `id_tipo_escuela` int(11) NOT NULL,
   `descripcion_tipo_escuela` varchar(50) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `tipo_escuela`
+--
+
+INSERT INTO `tipo_escuela` (`id_tipo_escuela`, `descripcion_tipo_escuela`) VALUES
+(1, 'Guarderia'),
+(2, 'Maternal');
 
 -- --------------------------------------------------------
 
@@ -255,7 +280,7 @@ ALTER TABLE `asistencia`
 -- AUTO_INCREMENT de la tabla `escuelas`
 --
 ALTER TABLE `escuelas`
-  MODIFY `id_escuela` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_escuela` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT de la tabla `estado_tipo`
 --
@@ -280,7 +305,7 @@ ALTER TABLE `tarifas`
 -- AUTO_INCREMENT de la tabla `tipo_escuela`
 --
 ALTER TABLE `tipo_escuela`
-  MODIFY `id_tipo_escuela` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_tipo_escuela` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `tipo_usuario`
 --
