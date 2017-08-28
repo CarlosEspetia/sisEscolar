@@ -1,17 +1,5 @@
 @extends('layouts.admin')
 @section('contenido')
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of 5d09edd... tarifas
-    <h3>index Hola</h3>
-
-=======
-=======
->>>>>>> 7b0b23ce548e0cdaab13ee5a58833e8cc48ecb49
     <div class="col-lg-12">
         <h1 class="page-header">Escuelas</h1>
     </div>
@@ -71,12 +59,5 @@
         </div>
         <!-- /.panel -->
     </div>
-    <!-- /.col-lg-12 -->
-<<<<<<< HEAD
->>>>>>> 7b0b23ce548e0cdaab13ee5a58833e8cc48ecb49
-=======
->>>>>>> 7b0b23ce548e0cdaab13ee5a58833e8cc48ecb49
-=======
-    <h3>index</h3>
->>>>>>> parent of e310e4c... tarifas
+    <!-- /.col-lg-12 
 @endsection
