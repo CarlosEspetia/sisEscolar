@@ -11,7 +11,11 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <title>BiteManager 1.0</title>
+=======
+    <title>sisEscolar</title>
+>>>>>>> 7b0b23ce548e0cdaab13ee5a58833e8cc48ecb49
 =======
     <title>sisEscolar</title>
 >>>>>>> 7b0b23ce548e0cdaab13ee5a58833e8cc48ecb49
@@ -52,7 +56,11 @@
                 </button>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <a class="navbar-brand" href="index.html">BiteManager 1.0</a>
+=======
+                <a class="navbar-brand" href="index.html">sisEscolar</a>
+>>>>>>> 7b0b23ce548e0cdaab13ee5a58833e8cc48ecb49
 =======
                 <a class="navbar-brand" href="index.html">sisEscolar</a>
 >>>>>>> 7b0b23ce548e0cdaab13ee5a58833e8cc48ecb49
