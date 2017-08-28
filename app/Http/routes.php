@@ -15,4 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//Route::get('/tarifas', 'Tarifas@hola');
+
+Route::get('/tarifas', 'Tarifas@index');
+Route::get('/create', 'createTarifa@create');
+
+
+
+
 Route::resource('/escuela', 'EscuelaController');//Ruta General para modelo Escula.
