@@ -59,5 +59,5 @@
         </div>
         <!-- /.panel -->
     </div>
-    <!-- /.col-lg-12 
+    <!-- /.col-lg-12 -->
 @endsection
