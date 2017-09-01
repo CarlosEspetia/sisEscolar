@@ -41,13 +41,20 @@
 							<td>{{$data->concepto}}</td>
 							<td>{{$data->monto}}</td>
 							<td>
-								<a href="">
+								<a href="{{URL::action('TarifaController@edit',$data->id_tarifa)}}">
                                     <button class="btn btn-info">
                                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar
                                     </button>
                                 </a>  
+
+                                <a href="" data-target="#modal-delete-{{$data->id_tarifa}}" data-toggle="modal">
+                                    <button class="btn btn-danger">
+                                       <i class="fa fa-trash-o" aria-hidden="true"></i> Eliminar
+                                    </button>
+                                </a>  
 							</td>
 						</tr>
+                        @include('tarifa.modal')
 						@endforeach
                     </tbody>
                 </table>

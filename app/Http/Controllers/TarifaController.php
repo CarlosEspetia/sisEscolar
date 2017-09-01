@@ -29,8 +29,9 @@ class TarifaController extends Controller
 			$query = trim($request->get('TextoBusqueda'));
 			$tarifas = DB::table('tarifas')
 			->where('concepto','LIKE','%'.$query.'%')
+			->where ('condicion','=','1')
 			->orderBy('id_tarifa','asc')
-			->paginate(5);
+			->paginate(10);
 			return view ('tarifa.index', ['tarifas'=>$tarifas,'TextoBusqueda'=>$query]);
 		}
 	}
@@ -45,8 +46,34 @@ class TarifaController extends Controller
 		$tarifa = new Tarifa();
 		$tarifa->concepto = $request->get('concepto');
 		$tarifa->monto = $request->get('monto');
-
+		$tarifa->condicion = true;
 		$tarifa->save();
+
+		return Redirect::to('/tarifa');
+	}
+
+	public function edit($id_tarifa)
+	{
+		return view('tarifa.edit',['tarifa'=>Tarifa::findOrFail($id_tarifa)]);
+
+	}
+
+	public function update(TarifaRequest $request,$id_tarifa) 
+	{
+		$tarifa = Tarifa::findOrFail($id_tarifa);
+		$tarifa->concepto = $request->get('concepto');
+		$tarifa->monto = $request->get('monto');
+		$tarifa->update();
+
+		return Redirect::to('/tarifa');
+	}
+
+	public function destroy($id_tarifa)
+	{
+		$tarifa = Tarifa::findOrFail($id_tarifa);
+		$tarifa->condicion = '0';
+		$tarifa->update();
+		//$tarifa->concepto = $request->get('concepto');
 
 		return Redirect::to('/tarifa');
 	}
