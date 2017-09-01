@@ -281,7 +281,7 @@
                                     <a href="/escuela">Escuelas</a>
                                 </li>
                                 <li>
-                                    <a href="morris.html">Morris.js Charts</a>
+                                    <a href="/tarifa">Tarifas</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
