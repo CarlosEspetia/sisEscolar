@@ -19,5 +19,7 @@ Route::resource('/escuela', 'EscuelaController');//Ruta General para modelo Escu
 
 Route::resource('/tarifa', 'TarifaController');//Ruta General para modelo Tarifa
 
+Route::resource('/alumno', 'AlumnoController');//Ruta General para modelo Alumno
+
 
 
