@@ -283,6 +283,9 @@
                                 <li>
                                     <a href="/tarifa">Tarifas</a>
                                 </li>
+                                <li>
+                                    <a href="/alumno">Alumnos</a>
+                                </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
