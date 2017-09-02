@@ -46,12 +46,6 @@
                                         <button class="btn btn-info">
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar
                                         </button>
-                                    </a>    
-
-                                    <a href="tarifa">
-                                        <button class="btn btn-primary">
-                                            <i class="fa fa-external-link" aria-hidden="true"></i> Ver escuela
-                                        </button>
                                     </a>                            
                                 </td>
                             </tr>

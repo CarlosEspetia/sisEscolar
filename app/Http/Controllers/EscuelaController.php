@@ -1,10 +1,16 @@
 <?php
 namespace sisEscolar\Http\Controllers;
+
 use Illuminate\Http\Request;
+
 use sisEscolar\Http\Requests;
+
 use sisEscolar\Escuela;
+
 use Illuminate\Support\Facades\Redirect;
+
 use sisEscolar\Http\Requests\EscuelaRequest;
+
 use DB;
 class EscuelaController extends Controller
 {
@@ -28,7 +34,8 @@ class EscuelaController extends Controller
     }
     public function create()
     {
-        return view('escuela.create');
+        $tipo_escuela = DB::table('tipo_escuela')->get();
+        return view('escuela.create',['tipos'=>$tipo_escuela]);
     }
     public function store(EscuelaRequest $request)
     {
