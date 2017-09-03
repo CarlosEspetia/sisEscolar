@@ -17,14 +17,14 @@
                             @include('alumno.search')
                         </div>
                         <div class="col-md-6 col-xs-12">
-                            <a href="escuela/create" style="text-decoration:none">
+                            <a href="alumno/create" style="text-decoration:none">
                             <button class="btn btn-success btn-block"><i class="fa fa-plus" aria-hidden="true"></i> Registrar Alumno</button>
                             </a>
                         </div>
                     </div>
                 </center>
                 <br>
-                <table style="text-align: center;" width="100%" class="table table-striped table-bordered table-hover table-responsive" id="dataTables-example">
+                <table style="" width="100%" class="table table-striped table-bordered table-hover table-responsive" id="dataTables-example">
                     <thead>
                         <tr>
                             <th>#</th>

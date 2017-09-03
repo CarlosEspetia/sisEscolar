@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource('/', 'EscuelaController');//Ruta principal hacia modelo Escuela.
 
 Route::resource('/escuela', 'EscuelaController');//Ruta General para modelo Escuela.
 

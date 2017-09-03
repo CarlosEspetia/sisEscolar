@@ -25,16 +25,15 @@ class AlumnoRequest extends Request
     {
         return [
             'escuela_alumno'=>'required',
-            'estado_alumno'=>'required',
             'nombre_alumno'=>'required|max:100',
             'apellido_alumno'=>'required|max:100',
             'direcion_alumno'=>'required|max:100',
             'telefono_emergencia_alumno'=>'required|max:11',
-            'autorizados_alumno'=>'required|max:100',
-            'observaciones_alumno'=>'required|max:100',
-            'foto_alumno'=>'required',
+            'autorizados_alumno'=>'max:100',
+            'observaciones_alumno'=>'max:100',
+            'foto_alumno'=>'mimes:jpeg,bmp,png',
             'edad_alumno'=>'required|max:11',
-            'telefono_alumno'=>'mimes:jpeg,bmp,png',
+            'telefono_alumno'=>'required|max:11',
             'nombre_padre_alumno'=>'required|max:100',
             'nombre_madre_alumno'=>'required|max:100'        
         ];

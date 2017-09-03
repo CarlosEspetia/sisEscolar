@@ -22,7 +22,7 @@ class AlumnoController extends Controller
     {
         
     }
-    public function index(Request $request)//Metodo.
+    public function index(Request $request)
     {
         if ($request)
         {
@@ -46,19 +46,32 @@ class AlumnoController extends Controller
     public function create()
     {
         $escuela = DB::table('escuelas')
-        ->select('id_escuela','nombre_escuela');
-        $estado = DB::table('estado_tipo')
-        ->select('id_estado_tipo','descriopcion_estado_tipo');
-        return view('alumno.create',['escuela'=>$escuela,'']);
+        ->select('id_escuela','nombre_escuela')
+        ->get();
+        return view('alumno.create',['escuelas'=>$escuela]);
     }
-    public function store(EscuelaRequest $request)
+    public function store(AlumnoRequest $request)
     {
-        $escuela = new Escuela();
-        $escuela->nombre_escuela = $request->get('nombre_escuela');
-        $escuela->direcion_escuela = $request->get('direcion_escuela');
-        $escuela->tipo_escuela = $request->get('tipo_escuela');
-        $escuela->save();
-        return Redirect::to('/escuela');
+        $alumno = new Alumno();
+        $alumno->escuela_alumno = $request->get('escuela_alumno');
+        $alumno->estado_alumno = '1';
+        $alumno->nombre_alumno = $request->get('nombre_alumno');
+        $alumno->apellido_alumno = $request->get('apellido_alumno');
+        $alumno->direccion_alumno = $request->get('direccion_alumno');
+        $alumno->telefono_emergencia_alumno = $request->get('telefono_emergencia_alumno');
+        $alumno->autorizados_alumno = $request->get('autorizados_alumno');
+        $alumno->observaciones_alumno = $request->get('observaciones_alumno');
+        $alumno->edad_alumno = $request->get('edad_alumno');
+        $alumno->telefono_alumno = $request->get('telefono_alumno');
+        $alumno->nombre_padre_alumno = $request->get('nombre_padre_alumno');
+        $alumno->nombre_madre_alumno = $request->get('nombre_madre_alumno');
+        if(Input::hasFile('foto_alumno'))
+        {
+            $file = Input::file('foto_usuario');
+            $file->move()
+        }
+        $alumno->save();
+        return Redirect::to('/alumno');
     }
     public function show($id_escuela)
     {
